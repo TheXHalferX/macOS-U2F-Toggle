@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9AF3910F296F7F0A0083035A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3910E296F7F0A0083035A /* main.swift */; };
+		9AF39116296F823C0083035A /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF39115296F823C0083035A /* Shell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9AF3910B296F7F0A0083035A /* macOS U2F Enabler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "macOS U2F Enabler"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF3910B296F7F0A0083035A /* u2fToggle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = u2fToggle; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3910E296F7F0A0083035A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9AF39115296F823C0083035A /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 		9AF3910C296F7F0A0083035A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AF3910B296F7F0A0083035A /* macOS U2F Enabler */,
+				9AF3910B296F7F0A0083035A /* u2fToggle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				9AF3910E296F7F0A0083035A /* main.swift */,
+				9AF39115296F823C0083035A /* Shell.swift */,
 			);
 			path = "macOS U2F Enabler";
 			sourceTree = "<group>";
@@ -65,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9AF3910A296F7F0A0083035A /* macOS U2F Enabler */ = {
+		9AF3910A296F7F0A0083035A /* u2fToggle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AF39112296F7F0A0083035A /* Build configuration list for PBXNativeTarget "macOS U2F Enabler" */;
+			buildConfigurationList = 9AF39112296F7F0A0083035A /* Build configuration list for PBXNativeTarget "u2fToggle" */;
 			buildPhases = (
 				9AF39107296F7F0A0083035A /* Sources */,
 				9AF39108296F7F0A0083035A /* Frameworks */,
@@ -77,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "macOS U2F Enabler";
+			name = u2fToggle;
 			productName = "macOS U2F Enabler";
-			productReference = 9AF3910B296F7F0A0083035A /* macOS U2F Enabler */;
+			productReference = 9AF3910B296F7F0A0083035A /* u2fToggle */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9AF39106296F7F0A0083035A /* Build configuration list for PBXProject "macOS U2F Enabler" */;
+			buildConfigurationList = 9AF39106296F7F0A0083035A /* Build configuration list for PBXProject "macOS U2F Toggle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9AF3910A296F7F0A0083035A /* macOS U2F Enabler */,
+				9AF3910A296F7F0A0083035A /* u2fToggle */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF39116296F823C0083035A /* Shell.swift in Sources */,
 				9AF3910F296F7F0A0083035A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +248,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -253,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -261,7 +267,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9AF39106296F7F0A0083035A /* Build configuration list for PBXProject "macOS U2F Enabler" */ = {
+		9AF39106296F7F0A0083035A /* Build configuration list for PBXProject "macOS U2F Toggle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AF39110296F7F0A0083035A /* Debug */,
@@ -270,7 +276,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AF39112296F7F0A0083035A /* Build configuration list for PBXNativeTarget "macOS U2F Enabler" */ = {
+		9AF39112296F7F0A0083035A /* Build configuration list for PBXNativeTarget "u2fToggle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AF39113296F7F0A0083035A /* Debug */,
