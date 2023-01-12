@@ -82,7 +82,7 @@ class SystemAuthData {
 
         func edit(_ task: task, _ file: file, _ password: String) {
             let f = file == .screensaver ? screensaverContents : sudoContents
-            let lineToAdd = "auth   \(file == .sudo ? "sufficient" : "required")    \(pamLibLocationInOpt!)"
+            let lineToAdd = "auth       \(file == .sudo ? "sufficient" : "required  ")     \(pamLibLocationInOpt!)"
             switch task {
             case .enable:
                 if f.state == .disable {
