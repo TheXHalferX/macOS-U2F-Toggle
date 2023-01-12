@@ -43,7 +43,7 @@
 		9AF39102296F7F0A0083035A = {
 			isa = PBXGroup;
 			children = (
-				9AF3910D296F7F0A0083035A /* macOS U2F Enabler */,
+				9AF3910D296F7F0A0083035A /* macOS U2F Toggle */,
 				9AF3910C296F7F0A0083035A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,13 +56,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9AF3910D296F7F0A0083035A /* macOS U2F Enabler */ = {
+		9AF3910D296F7F0A0083035A /* macOS U2F Toggle */ = {
 			isa = PBXGroup;
 			children = (
 				9AF3910E296F7F0A0083035A /* main.swift */,
 				9AF39115296F823C0083035A /* Shell.swift */,
 			);
-			path = "macOS U2F Enabler";
+			path = "macOS U2F Toggle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
