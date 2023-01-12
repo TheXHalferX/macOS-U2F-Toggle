@@ -139,7 +139,7 @@ class SystemAuthData {
                     }
                 }
             }
-            print("\(file == .sudo ? "Sudo" : "Screensaver") autherntification \(task == .enable ? "enabled" : "disabled")")
+            print("\(file == .sudo ? "Sudo" : "Screensaver") auth \(task == .enable ? "enabled" : "disabled")")
         }
     func checkInput(_ input: String) -> Bool {
         return Int(input) != nil && inRange(Int(input)!, rang: (enabled == .both || enabled == .neither ? 1...3 : 1...4))
